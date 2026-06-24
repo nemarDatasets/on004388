@@ -1,7 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Somatosensory evoked potentials in the human spinal cord to mixed nerve stimulation",
+  "description": "This dataset comprises simultaneous multimodal neurophysiological recordings from 40 participants, including electroencephalography (EEG), electrospinography (ESG), electroneurography (ENG), and electromyography (EMG), along with electrocardiographic and respiratory signals. Data were acquired during four conditions: resting state with eyes open, mixed median nerve stimulation, mixed tibial nerve stimulation, and alternating mixed nerve stimulation. The dataset enables investigation of somatosensory evoked potentials in the human spinal cord and their cortical correlates. This study was pre-registered on OSF (https://osf.io/sgptzt).",
+  "methods_description": "Simultaneous EEG-ESG-ENG-EMG recordings were acquired from 40 participants under four conditions: resting state (eyes open), mixed median nerve stimulation (arm), mixed tibial nerve stimulation (leg), and alternating mixed nerve stimulation. Recordings included electrocardiographic and respiratory signals. ESG electrode positions are provided for each participant. The EEG channel Fz was referenced to both the EEG reference (right mastoid, RM) and the ESG reference (6th thoracic vertebra, TH6). This study was pre-registered on OSF: https://osf.io/sgptzt.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -14,12 +16,33 @@
     "Vadim V. Nikulin": {},
     "Falk Eippert": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds004388.v1.0.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "somatosensory evoked potentials"
     },
+    {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "Electromyography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004576"
+    },
+    {
+      "term": "spinal cord"
+    },
+    {
+      "term": "Nerve Stimulation",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004558"
+    },
+    {
+      "term": "multimodal neurophysiology"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on004388",
       "identifier_type": "URL",
@@ -29,6 +52,11 @@
       "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004388",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004388.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -36,12 +64,12 @@
       "funder_name": "n/a"
     }
   ],
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "732.8 GB (805 files)"
   ],
   "formats": [
     ".fdt",
@@ -49,50 +77,8 @@
     ".m",
     ".md",
     ".set",
-    ".tsv"
+    ".tsv",
+    ".yml"
   ],
-  "description": "This dataset comprises simultaneous multimodal neurophysiological recordings from 40 participants, including electroencephalography (EEG), electrospinography (ESG), electroneurography (ENG), and electromyography (EMG), acquired during resting state and peripheral nerve stimulation conditions. The study investigates somatosensory evoked potentials in the human spinal cord elicited by mixed median and tibial nerve stimulation, with concurrent monitoring of electrocardiographic and respiratory signals. Data are organized according to the Brain Imaging Data Structure specification.",
-  "methods_description": "Simultaneous EEG-ESG-ENG-EMG recordings were acquired from 40 participants under four conditions: resting state with eyes open, mixed median nerve stimulation, mixed tibial nerve stimulation, and alternating mixed median or tibial nerve stimulation. Recordings included electrocardiographic and respiratory signals. EEG channel Fz was referenced to both the right mastoid (standard EEG reference) and the 6th thoracic vertebra (ESG reference).",
-  "keywords": [
-    {
-      "term": "somatosensory evoked potentials"
-    },
-    {
-      "term": "spinal cord"
-    },
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "electrospinography"
-    },
-    {
-      "term": "peripheral nerve stimulation"
-    },
-    {
-      "term": "multimodal neurophysiology"
-    },
-    {
-      "term": "electromyography"
-    },
-    {
-      "term": "electroneurography"
-    },
-    {
-      "term": "median nerve"
-    },
-    {
-      "term": "tibial nerve"
-    },
-    {
-      "term": "resting state"
-    },
-    {
-      "term": "BIDS"
-    },
-    {
-      "term": "spinal cord recordings"
-    }
-  ],
-  "source_hash": "90d7ba474c58969acff8a204ddc3928c74f978cdbf1283f3fd6d0d1dd5e9d148"
+  "source_hash": "563d0144c283eadfa94193ed95bb43a10efdce25ec17f2a63b4d17b21dd377cd"
 }
