@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Somatosensory evoked potentials in the human spinal cord to mixed nerve stimulation",
-  "description": "This dataset comprises simultaneous multimodal neurophysiological recordings from 40 participants, including electroencephalography (EEG), electrospinography (ESG), electroneurography (ENG), and electromyography (EMG), along with electrocardiographic and respiratory signals. Data were acquired during four conditions: resting state with eyes open, mixed median nerve stimulation, mixed tibial nerve stimulation, and alternating mixed nerve stimulation. The dataset enables investigation of somatosensory evoked potentials in the human spinal cord and their cortical correlates. This study was pre-registered on OSF (https://osf.io/sgptzt).",
-  "methods_description": "Simultaneous EEG-ESG-ENG-EMG recordings were acquired from 40 participants under four conditions: resting state (eyes open), mixed median nerve stimulation (arm), mixed tibial nerve stimulation (leg), and alternating mixed nerve stimulation. Recordings included electrocardiographic and respiratory signals. ESG electrode positions are provided for each participant. The EEG channel Fz was referenced to both the EEG reference (right mastoid, RM) and the ESG reference (6th thoracic vertebra, TH6). This study was pre-registered on OSF: https://osf.io/sgptzt.",
+  "description": "This dataset comprises simultaneous multimodal neurophysiological recordings from 40 participants, including electroencephalography (EEG), electrospinography (ESG), electroneurography (ENG), and electromyography (EMG), acquired during resting state and peripheral nerve stimulation conditions. The study investigates somatosensory evoked potentials in the human spinal cord using separate median nerve stimulation (arm) and tibial nerve stimulation (leg) paradigms, as well as alternating mixed stimulation conditions, with concurrent electrocardiographic and respiratory monitoring. Data are organized according to the Brain Imaging Data Structure specification.",
+  "methods_description": "Simultaneous EEG-ESG-ENG-EMG recordings were acquired from 40 participants under four conditions: resting state with eyes open, mixed median nerve stimulation (arm nerve), mixed tibial nerve stimulation (leg nerve), and alternating mixed median or tibial nerve stimulation. Recordings included electrocardiographic and respiratory signals. EEG channel Fz was referenced to both the right mastoid (standard EEG reference) and the 6th thoracic vertebra (ESG reference).",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -18,12 +18,19 @@
   },
   "keywords": [
     {
-      "term": "somatosensory evoked potentials"
-    },
-    {
       "term": "Electroencephalography",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "somatosensory evoked potentials",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D013003"
+    },
+    {
+      "term": "spinal cord",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D013116"
     },
     {
       "term": "Electromyography",
@@ -31,12 +38,15 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D004576"
     },
     {
-      "term": "spinal cord"
-    },
-    {
-      "term": "Nerve Stimulation",
+      "term": "peripheral nerve stimulation",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D004558"
+    },
+    {
+      "term": "Electrospinography"
+    },
+    {
+      "term": "Electroneurography"
     },
     {
       "term": "multimodal neurophysiology"
@@ -49,14 +59,14 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004388",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds004388.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on004388",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
@@ -69,7 +79,7 @@
     "eeg"
   ],
   "sizes": [
-    "732.8 GB (805 files)"
+    "732.9 GB (805 files)"
   ],
   "formats": [
     ".fdt",
